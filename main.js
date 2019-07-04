@@ -1,2 +1,2 @@
-var WebSocket = require('ws');
-var connection = new WebSocket('wss://integracion-tarea-4.herokuapp.com');
+var io = require('socket.io-client');
+var socket = io.connect('wss://integracion-tarea-4.herokuapp.com',{secure: true,    rejectUnauthorized: false});

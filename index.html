@@ -4,7 +4,15 @@
     <meta charset="utf-8">
     <title>App</title>
     <script src="/socket.io/socket.io.js"></script>
-    <script scr="main.js"></script>
+    <script>
+
+      var socket = io('https://integracion-tarea-4.herokuapp.com');
+      socket.on('connect', function(){});
+      socket.on('event', function(data){});
+      socket.on('disconnect', function(){});
+
+
+    </script>
   </head>
   <body>
     <h1>Hola world !</h1>
